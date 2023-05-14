@@ -1,0 +1,23 @@
+{
+    "DT_ItemData": {
+        "ItemIcon": 608525859,
+        "ItemLibrary_Potion": 323396356,
+        "ItemLibrary_Potion \u306e\u30b3\u30d4\u30fc": 1585046928,
+        "ItemLibrary_Important": 1721986583,
+        "ItemLibrary_Rod": 44074862,
+        "ItemLibrary_Gold": 1151545593,
+        "ItemLibrary_MaterialItem": 598342335,
+        "ItemLibrary_Skill": 1219351915,
+        "ItemLibrary_Weapon": 1343950823,
+        "ItemLibrary_Wand": 164394862,
+        "ItemLibrary_Shield": 538624776,
+        "ItemLibrary_Bow": 320091337,
+        "ItemLibrary_Arrow": 216161443,
+        "ItemLibrary_Armor": 988272736,
+        "FishInfos": 1848748616
+    },
+    "DT_EnemyLibrary": {
+        "Enemy": 2105345493,
+        "DT_EnemyLibrary": 1266723316
+    }
+}
