@@ -86,7 +86,7 @@ def DownloadWorkSheet(DownloadDir: str, SpreadSheetTitle: str, WorkSheetTitle: s
             return False
         
         DOWNLOAD_NAME = GetDownloadName(DownloadDir, SpreadSheetTitle, WorkSheetTitle)
-        with open(DOWNLOAD_NAME, 'w', newline='') as f:
+        with open(DOWNLOAD_NAME, 'w', encoding='utf-8', newline='') as f:
             writer = csv.writer(f)
             writer.writerows(WorkSheet.get_all_values())
             print(f'SUCCESS DOWNLOAD {DOWNLOAD_NAME} !')
