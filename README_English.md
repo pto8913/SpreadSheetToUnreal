@@ -5,10 +5,10 @@
 3. DataTable name must be `"GoogleSpreadSheet Title"_-_"Sheet Name"`.
 
 `GoogleSpreadSheet Title`<br>
-["https://github.com/pto8913/GoogleSheetToUnreal/blob/master/Resources/SpreadSheetTitle.png"]
+![GoogleSpreadSheet Title](https://github.com/pto8913/GoogleSheetToUnreal/blob/master/Resources/SpreadSheetTitle.png)
 
 `Sheet Name`<br>
-["https://github.com/pto8913/GoogleSheetToUnreal/blob/master/Resources/SheetName.png"]
+![SheetName](https://github.com/pto8913/GoogleSheetToUnreal/blob/master/Resources/SheetName.png)
 
 ## How to setup your service account 
 * https://pto8913.hatenablog.com/entry/2023/05/11/002859
