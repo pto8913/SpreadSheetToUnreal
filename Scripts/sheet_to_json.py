@@ -58,7 +58,7 @@ def RecreateSheetJson():
             sheets[WorkSheet.title] = WorkSheet.id
         titles[row.title] = sheets
         
-    with open(SHEET_JSON, 'w') as f:
+    with open(SHEET_JSON, 'w', encoding='utf-8') as f:
         json.dump(titles, f, indent=4)
 
 def GetFileName(SpreadSheetTitle: str, WorkSheetTitle: str) -> str:
@@ -69,7 +69,7 @@ def GetDownloadName(DownloadDir: str, SpreadSheetTitle: str, WorkSheetTitle: str
 
 def DownloadWorkSheet(DownloadDir: str, SpreadSheetTitle: str, WorkSheetTitle: str) -> bool:
     print(f"----------- START DOWNLOAD -----------")
-    with open(SHEET_JSON, 'r') as f:
+    with open(SHEET_JSON, 'r', encoding='utf-8') as f:
         Sheet_Json = json.load(f)
     if Sheet_Json[SpreadSheetTitle]:
         SpreadSheet = gc.open(SpreadSheetTitle)
@@ -86,7 +86,7 @@ def DownloadWorkSheet(DownloadDir: str, SpreadSheetTitle: str, WorkSheetTitle: s
             return False
         
         DOWNLOAD_NAME = GetDownloadName(DownloadDir, SpreadSheetTitle, WorkSheetTitle)
-        with open(DOWNLOAD_NAME, 'w', encoding='utf-8', newline='') as f:
+        with open(DOWNLOAD_NAME, 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerows(WorkSheet.get_all_values())
             print(f'SUCCESS DOWNLOAD {DOWNLOAD_NAME} !')
