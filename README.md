@@ -1,6 +1,6 @@
 # Google SpreadSheetToUnreal
 
-<a href="https://github.com/pto8913/GoogleSheetToUnreal/blob/master/Resources/SpreadSheetTitle.png">English</a>
+<a href="https://github.com/pto8913/GoogleSheetToUnreal/blob/master/README_English.md">English</a>
 
 ## 前提条件
 1. DataTableがすでに存在していること
