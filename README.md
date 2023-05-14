@@ -18,3 +18,6 @@
 準備編 : https://pto8913.hatenablog.com/entry/2023/05/11/002859 <br>
 実装編 : https://pto8913.hatenablog.com/entry/2023/05/11/191959
 
+## 注意
+* GitHub等で管理する場合`service_account.json`を公開しないように注意してください
+* `service_account.json`を`.gitignore`に追加するなどして除外するようにしてください
