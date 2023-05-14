@@ -1,4 +1,7 @@
 # Google SpreadSheetToUnreal
+
+<a href="https://github.com/pto8913/GoogleSheetToUnreal/blob/master/Resources/SpreadSheetTitle.png">日本語</a>
+
 ## Prerequirement
 1. Need to exists DataTable.
 2. The structure of the SpreadSheet must be the same as the structure of the DataTable.
