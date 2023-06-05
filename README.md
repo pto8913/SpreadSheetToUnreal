@@ -1,43 +1,44 @@
 # Google SpreadSheetToUnreal
 
-<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/icon.png" alt="" />
-
 <a href="https://github.com/pto8913/GoogleSheetToUnreal/blob/master/README_English.md">English</a>
 
 ## 目次
 - [Google SpreadSheetToUnreal](#google-spreadsheettounreal)
   - [目次](#目次)
   - [使い方](#使い方)
+    - [準備](#準備)
     - [実行方法](#実行方法)
-    - [パラメーターについて](#パラメーターについて)
-  - [準備](#準備)
   - [注意点](#注意点)
     - [管理](#管理)
     - [DataTableの名前について](#datatableの名前について)
     - [Google SpreadSheetのタイトル](#google-spreadsheetのタイトル)
   - [カスタマイズ](#カスタマイズ)
+    - [パラメーターについて](#パラメーターについて)
   - [csvファイルの保存場所](#csvファイルの保存場所)
 
 ## 使い方
+### 準備
+1. Google Service Accountの作成します。 : https://pto8913.hatenablog.com/entry/2023/05/11/002859
+2. [Release](https://github.com/pto8913/SpreadSheetToUnreal/releases/tag/v1.0.0)から`source code`をダウンロードします。
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/release.png" alt="" /><br>
+
+3. `.zip`を展開します。
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/tenkai.png" alt="" /><br>
+
+4. `YourProject/Plugins`フォルダに移動させます。
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/plugin.png" alt="" /><br>
+
+5. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/service.png" alt="" /><br>
+
+準備完了！<br>
+
 ### 実行方法
 `/Game/Plugins/SpreadSheetToUnreal Content/EditorOnly/EUW/`を開きます<br>
 `EUW_SpreadSheet_Auto_Import`を右クリックして`Run Editor Utility Widget`をクリックすると実行できます。<br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/where.png" alt="" /><br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/run.png" alt="" /><br>
-
-### パラメーターについて
-| 名前 | 説明 |
-|:---:|:---:|
-| SpreadSheet | スプレッドシートの名前<br>SpreadSheetListに表示された名前をクリックすると自動的に設定されます |
-| WorkSheet | シートの名前<br>SpreadSheetと同様に自動的に設定されます |
-| ReDownload CSV | GoogleSpreadSheetをダウンロードするかどうか<br>[csvファイルの保存場所](#csvファイルの保存場所) |
-| Only Sheet Name | trueの場合WorkSheetに設定された値で、DataTableを(Re)Importします |
-| Directory | DataTableが存在する、または、Importするコンテンツブラウザの場所 |
-| Struct | Importの場合に使用されます。 structの名前を入力してください。<br>C++ struct : ModuleName.StructName<br>Editor struct : structアセットを右クリック>CopyReference<br><img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/whatisstruct.png" alt="" /> |
-
-## 準備
-準備編 : https://pto8913.hatenablog.com/entry/2023/05/11/002859 <br>
-実装編 : https://pto8913.hatenablog.com/entry/2023/05/11/191959
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/icon.png" alt="" />
 
 ## 注意点
 ### 管理
@@ -58,6 +59,16 @@
 処理を編集したい場合は、`YourProject/Plugins/SpreadSheetToUnreal/Scripts/sheet_to_unreal.py`で行うことができます。<br>
 編集後、`/Game/Plugins/SpreadSheetToUnreal Content/EditorOnly/EUW/EUW_SpreadSheet_Auto_Import`のBPを編集して、`sheet_to_unreal.py`の処理を呼び出してください。
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/customize.png" alt="" />
+
+### パラメーターについて
+| 名前 | 説明 |
+|:---:|:---:|
+| SpreadSheet | スプレッドシートの名前<br>SpreadSheetListに表示された名前をクリックすると自動的に設定されます |
+| WorkSheet | シートの名前<br>SpreadSheetと同様に自動的に設定されます |
+| ReDownload CSV | GoogleSpreadSheetをダウンロードするかどうか<br>[csvファイルの保存場所](#csvファイルの保存場所) |
+| Only Sheet Name | trueの場合WorkSheetに設定された値で、DataTableを(Re)Importします |
+| Directory | DataTableが存在する、または、Importするコンテンツブラウザの場所 |
+| Struct | Importの場合に使用されます。 structの名前を入力してください。<br>C++ struct : ModuleName.StructName<br>Editor struct : structアセットを右クリック>CopyReference<br><img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/whatisstruct.png" alt="" /> |
 
 ## csvファイルの保存場所
 デフォルトでは、`YourProject/DataTableSource`に保存されます
