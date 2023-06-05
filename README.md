@@ -1,6 +1,6 @@
 # Google SpreadSheetToUnreal
 
-<a href="https://github.com/pto8913/GoogleSheetToUnreal/blob/master/README_English.md">English</a>
+<!-- <a href="https://github.com/pto8913/GoogleSheetToUnreal/blob/master/README_English.md">English</a> -->
 
 ## 目次
 - [Google SpreadSheetToUnreal](#google-spreadsheettounreal)
@@ -31,7 +31,7 @@
 5. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/service.png" alt="" /><br>
 
-準備完了！<br>
+準備完了!<br>
 
 ### [実行方法](#目次)
 `/Game/Plugins/SpreadSheetToUnreal Content/EditorOnly/EUW/`を開きます<br>
@@ -42,7 +42,8 @@
 
 ## [注意点](#目次)
 ### [管理](#目次)
-- GitHub等で管理する場合、<a href="https://pto8913.hatenablog.com/entry/2023/05/11/002859">Google Service Accountの作成</a>で作成した`service_account.json`を`.gitignore`に追加して除外するようにしましょう
+- GitHub等で管理する場合、<a href="https://pto8913.hatenablog.com/entry/2023/05/11/002859">Google Service Accountの作成</a>で作成した`service_account.json`と`sheet.json`を`YourProject/.gitignore`に追加して除外するようにしましょう。<br>
+**※`Plugin`の`.gitignore`ではないので注意!!!**
   
 ### [DataTableの名前について](#目次)
 以下のようになっていると既定の設定で問題なく動かせます。<br>
