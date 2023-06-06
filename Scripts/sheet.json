@@ -1,6 +1,9 @@
 {
+    "DT_CharacterMovementModel": {
+        "DT_CharacterMovementModel": 1285361046
+    },
     "DT_ItemData": {
-        "ItemIcon": 608525859,
+        "DT_ItemIcon": 608525859,
         "ItemLibrary_Potion": 323396356,
         "ItemLibrary_Potion \u306e\u30b3\u30d4\u30fc": 1585046928,
         "ItemLibrary_Important": 1721986583,
@@ -16,8 +19,37 @@
         "ItemLibrary_Armor": 988272736,
         "FishInfos": 1848748616
     },
+    "DT_QuestData": {
+        "DT_QuestData": 308106890
+    },
+    "DT_TalkTexts": {
+        "DT_DataAsset_NPC": 973593801,
+        "DT_TalkData": 201478180,
+        "DT_EncientBattle": 1639127818,
+        "DT_SystemMessage": 553669494,
+        "CrabStation": 223529159,
+        "Gemini": 981347358,
+        "Ces": 530918092,
+        "Tutorial": 610543287,
+        "Arie": 2003457163,
+        "Elda": 1866029152,
+        "Leo": 394359280,
+        "Virgo": 1781135077,
+        "TreiseTown": 1359311843,
+        "SonoTown": 1765036334,
+        "LkosTown": 1814212247,
+        "GlamValley": 664151369,
+        "Sanctuary": 147589883,
+        "AquaDanBase": 1187308101,
+        "DT_DialogMessages": 1680796428
+    },
+    "DT_Settings": {
+        "DT_LocationNames": 0,
+        "DT_KeyIcons": 284453115,
+        "DT_PlayerInputActions": 1422306171
+    },
     "DT_EnemyLibrary": {
-        "Enemy": 2105345493,
+        "DT_DataAsset_Enemy": 2105345493,
         "DT_EnemyLibrary": 1266723316
     }
 }
