@@ -26,9 +26,10 @@
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/tenkai.png" alt="" /><br>
 
 4. `YourProject/Plugins`フォルダに移動させます。
+<br>このときにバージョン情報を消しておいてください。<br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/plugin.png" alt="" /><br>
 
-5. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
+1. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/service.png" alt="" /><br>
 
 準備完了!<br>
