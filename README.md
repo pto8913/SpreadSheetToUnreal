@@ -29,8 +29,25 @@
 <br>このときにバージョン情報を消しておいてください。<br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/plugin.png" alt="" /><br>
 
-1. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
+5. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/service.png" alt="" /><br>
+
+6. Unreal Engineでpythonとjsonを使えるようにする
+エディタの設定からpython　Developer Modeを有効にする<br>
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_1.png" alt="" /><br>
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_2.png" alt="" /><br>
+
+`Plugins`から`Json Blueprint Utilities`を有効にする<br>
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_3.png" alt="" /><br>
+<img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_4.png" alt="" /><br>
+エディタを再起動。<br>
+
+7. Unreal Engineのpythonからgspreadを呼べるようにする
+`Ctrl+R`→`cmd`でコマンドプロンプトを開きます<br>
+開いたらUnreal Engineのpythonで`pip install gspread`します<br>
+```plain
+"C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\ThirdParty\Python3\Win64\python.exe" -m pip install gspread
+```
 
 準備完了!<br>
 
