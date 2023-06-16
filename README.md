@@ -22,18 +22,18 @@
 2. [Release](https://github.com/pto8913/SpreadSheetToUnreal/releases/tag/v1.0.0)から`source code`をダウンロードします。
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/release.png" alt="" /><br>
 
-3. `.zip`を展開します。
+3. `.zip`を展開します。<br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/tenkai.png" alt="" /><br>
 
-4. `YourProject/Plugins`フォルダに移動させます。
-<br>このときにバージョン情報を消しておいてください。<br>
+4. `YourProject/Plugins`フォルダに移動させます。<br>
+このときにバージョン情報を消しておいてください。<br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/plugin.png" alt="" /><br>
 
 5. 準備編で作成した`service_account.json`を`YourProject/Plugins/SpreadSheetToUnreal/Scripts/`に移動させます。
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/service.png" alt="" /><br>
 
-6. Unreal Engineでpythonとjsonを使えるようにする
-エディタの設定からpython　Developer Modeを有効にする<br>
+6. Unreal Engineでpythonとjsonを使えるようにする<br>
+エディタの設定から`python > Developer Mode`を有効にする<br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_1.png" alt="" /><br>
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_2.png" alt="" /><br>
 
@@ -42,7 +42,7 @@
 <img src="https://raw.githubusercontent.com/pto8913/SpreadSheetToUnreal/master/Resources/unrealpyhon_4.png" alt="" /><br>
 エディタを再起動。<br>
 
-7. Unreal Engineのpythonからgspreadを呼べるようにする
+7. Unreal Engineのpythonからgspreadを呼べるようにする<br>
 `Ctrl+R`→`cmd`でコマンドプロンプトを開きます<br>
 開いたらUnreal Engineのpythonで`pip install gspread`します<br>
 ```plain
